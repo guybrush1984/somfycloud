@@ -12,8 +12,11 @@
   "hasDependency": false,
   "hasOwnDeamon": false,
   "maxDependancyInstallTime": 0,
+  "version": "1.0.0",
   "changelog": "https://github.com/guybrush1984/somfycloud/blob/master/CHANGELOG.md",
+  "changelog_beta": "https://github.com/guybrush1984/somfycloud/blob/beta/CHANGELOG.md",
   "documentation": "https://github.com/guybrush1984/somfycloud/blob/master/docs/fr_FR/index.md",
+  "documentation_beta": "https://github.com/guybrush1984/somfycloud/blob/beta/docs/fr_FR/index.md",
   "language": [
     "fr_FR",
     "en_US"
