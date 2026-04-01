@@ -227,6 +227,9 @@ class OverkizCloudAPI {
                     curl_setopt($ch, CURLOPT_POSTFIELDS, json_encode($body));
                     $headers[] = 'Content-Type: application/json';
                 }
+            } else if (!$formEncoded) {
+                curl_setopt($ch, CURLOPT_POSTFIELDS, '');
+                $headers[] = 'Content-Type: application/json';
             }
         } elseif ($method === 'GET') {
             curl_setopt($ch, CURLOPT_HTTPGET, true);
