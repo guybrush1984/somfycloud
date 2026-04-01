@@ -1,0 +1,28 @@
+{
+  "id": "somfycloud",
+  "name": "Somfy Cloud (Overkiz)",
+  "description": {
+    "fr_FR": "Controle des equipements Somfy (Connexoon, TaHoma) via l'API cloud Overkiz",
+    "en_US": "Control Somfy devices (Connexoon, TaHoma) via the Overkiz cloud API"
+  },
+  "licence": "AGPL",
+  "author": "Community",
+  "require": "4.0",
+  "category": "automation protocol",
+  "hasDependency": false,
+  "hasOwnDeamon": false,
+  "maxDependancyInstallTime": 0,
+  "changelog": "https://github.com/guybrush1984/somfycloud/blob/master/CHANGELOG.md",
+  "documentation": "https://github.com/guybrush1984/somfycloud/blob/master/docs/fr_FR/index.md",
+  "language": [
+    "fr_FR",
+    "en_US"
+  ],
+  "compatibility": [
+    "Jeedomboard",
+    "Smart",
+    "RPI/RPI2",
+    "Docker",
+    "DIY"
+  ]
+}
