@@ -50,32 +50,43 @@ $eqLogics = eqLogic::byType($plugin->getId());
                 $uiClass = $eqLogic->getConfiguration('uiClass', '');
                 // Map uiClass to an icon
                 $icon = 'fas fa-cube';
+                $iconColor = '#9b59b6';
                 switch ($uiClass) {
                     case 'RollerShutter':
+                    case 'Shutter':
                     case 'ExteriorScreen':
                     case 'Screen':
                         $icon = 'fas fa-bars';
+                        $iconColor = '#3498db';
                         break;
                     case 'Light':
                         $icon = 'fas fa-lightbulb';
+                        $iconColor = '#f1c40f';
                         break;
                     case 'GarageDoor':
+                        $icon = 'fas fa-warehouse';
+                        $iconColor = '#e67e22';
+                        break;
                     case 'Gate':
                         $icon = 'fas fa-door-open';
+                        $iconColor = '#e67e22';
                         break;
                     case 'Window':
                         $icon = 'fas fa-window-maximize';
+                        $iconColor = '#1abc9c';
                         break;
                     case 'Awning':
                     case 'Pergola':
                         $icon = 'fas fa-umbrella-beach';
+                        $iconColor = '#2ecc71';
                         break;
                     case 'VenetianBlind':
                         $icon = 'fas fa-align-justify';
+                        $iconColor = '#3498db';
                         break;
                 }
                 echo '<div class="eqLogicDisplayCard cursor ' . $opacity . '" data-eqLogic_id="' . $eqLogic->getId() . '">';
-                echo '<img src="plugins/somfycloud/plugin_info/somfycloud_icon.png" onerror="this.style.display=\'none\'" />';
+                echo '<i class="' . $icon . '" style="font-size:3em;color:' . $iconColor . ';margin-top:15px;"></i>';
                 echo '<br />';
                 $displayName = $eqLogic->getName();
                 $object = $eqLogic->getObject();
